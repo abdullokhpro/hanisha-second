@@ -50,14 +50,12 @@
   &__cards__bottom {
     display: flex;
     gap: 30px;
-    // min-height: 300px
   }
 
   &__cards__top {
     border-radius: 10px;
     background: url(../../assets/images/blog-top.png) no-repeat bottom right;
     background-color: #eaf1eb;
-    // background-size: 150px;
   }
 
   &__cards-bottom {
@@ -137,15 +135,37 @@
       &__bottom {
         justify-content: space-between;
       }
+
+      &__right {
+        background: url(../../assets/images/blog-right.png) no-repeat bottom
+          right;
+        background-size: contain;
+        background-color: #eff2f8;
+      }
     }
   }
 }
 
 @media (max-width: 730px) {
   .blog {
+    &__title {
+      font-size: 26px;
+    }
+
+    &__btn {
+      padding: 5px 25px;
+      line-height: normal;
+      font-size: 13px;
+    }
+
     &__cards {
       &__bottom {
         flex-direction: column;
+      }
+
+      &__title {
+        font-size: 20px;
+        line-height: normal;
       }
     }
 
@@ -159,6 +179,43 @@
 
     &__cards__right {
       background-size: 150px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .blog {
+    &__card {
+      background: linear-gradient(#ffffff6d);
+    }
+
+    &__card__btn {
+      border: 1px solid #eee;
+    }
+
+    &__cards__top {
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url(../../assets/images/blog-top.png) no-repeat bottom right;
+      border: 1px solid #eee;
+    }
+
+    &__cards-bottom {
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url(../../assets/images/blog-bottom.png) no-repeat bottom right;
+    }
+
+    &__cards__right {
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url(../../assets/images/blog-right.png) no-repeat bottom right;
     }
   }
 }
