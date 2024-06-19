@@ -1,0 +1,58 @@
+.blog {
+  padding: 35px 0;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+  }
+
+  &__title {
+    color: #1f2533;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: -5%;
+  }
+
+  &__btn {
+    padding: 11px 33px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    color: #359740;
+    font-size: 16px;
+    letter-spacing: -3.5%;
+    font-weight: 500;
+    line-height: 172%;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: #359740;
+      color: #fff;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  &__card {
+    border-radius: 10px;
+    padding: 30px;
+
+    &__time {
+      display: flex;
+      align-items: center;
+      color: #70737c;
+    }
+
+    &__time-icon {
+      font-size: 24px;
+      color: #70737c;
+    }
+  }
+
+  &__card--top {
+    background-color: #eaf1eb;
+  }
+}
